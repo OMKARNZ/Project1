@@ -1,0 +1,155 @@
+<!DOCTYPE <!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    
+        <style>
+
+            /* From Uiverse.io by bociKond */ 
+            
+            #main2{
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                height: 100vh; /* Full viewport height */
+            }
+                
+            
+            #content {
+                width: fit-content;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                padding: 50px 40px 20px 40px;
+                background-color: #ffffff;
+                box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+                    0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+                    0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+              border-radius: 11px;
+              font-family: "Inter", sans-serif;
+            }
+            
+            
+            .form {
+            
+              --bg-light: #fffcfc;
+              --bg-dark: #000000;
+              --clr: #000000;
+              --clr-alpha: #cbcbcb60;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 1rem;
+              width: 100%;
+              max-width: 300px;
+            }
+            
+            .form .input-span {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+            }
+            
+            .form input[type="email"],
+            .form input[type="password"], 
+            .form input[type="number"] {
+              border-radius: 0.5rem;
+              padding: 1rem 0.75rem;
+              width: 100%;
+              border: none;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              background-color: var(--clr-alpha);
+              outline: 2px solid var(--bg-dark);
+            }
+            
+            .form input[type="email"]:focus,
+            .form input[type="password"]:focus {
+              outline: 2px solid var(--clr);
+            }
+
+        
+            
+            .label {
+              align-self: flex-start;
+              color: var(--clr);
+              font-weight: 600;
+            }
+            
+            .form .submit {
+              padding: 1rem 0.75rem;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              border-radius: 3rem;
+              background-color: var(--bg-dark);
+              color: var(--bg-light);
+              border: none;
+              cursor: pointer;
+              transition: all 300ms;
+              font-weight: 600;
+              font-size: 0.9rem;
+            }
+            
+            .form .submit:hover {
+              background-color: var(--clr);
+              box-shadow: 0px 0px 10px #252525;
+                color: #fff;
+                border: none;
+                
+            }
+            
+            .span {
+              text-decoration: none;
+              color: var(--bg-dark);
+            }
+            
+            .span a {
+              color: var(--clr);
+            }
+            
+            </style>
+    
+    </head>
+    <body id="main2">
+        <section id="content">
+        <div class="main2">
+            <h1>Register your Account</h1>
+       
+        <form class="form">
+            <span class="input-span">
+              <label for="email" class="label">Email</label>
+              <input type="email" name="email" id="email"
+            /></span>
+
+            <span class="input-span">
+              <label for="number" class="label">Phone number</label>
+              <input type="number"  name="number" id="number" maxlength="10" />
+
+            </span>
+            
+            
+            
+            <span class="input-span">
+              <label for="password" class="label">Password</label>
+              <input type="password" name="password" id="password"
+            /></span>
+
+            <input class="submit" type="submit" value="Sign up" />
+            <span class="span">Already have an account? <a href="login.html">Sign in</a></span>
+          </form>
+          
+    </div>
+    </section>
+</body>
+</html>
